@@ -29,7 +29,7 @@ def getRandoperation():
     """
     return random.choice(['+', '-', '*'])
 
-def function_C(num1, num2, operation):
+def doArithmetic(num1, num2, operation):
     
     """
     Performs a basic arithmetic operation between two numbers.
@@ -64,7 +64,7 @@ def math_quiz():
     for _ in range(rounds):
         n1 = getRandint(1, 10); n2 = getRandint(1, 10); operation = getRandoperation()
 
-        PROBLEM, ANSWER = function_C(n1, n2, operation)
+        PROBLEM, ANSWER = doArithmetic(n1, n2, operation)
         print(f"\nQuestion: {PROBLEM}")
         useranswer = input("Your answer: ")
         
